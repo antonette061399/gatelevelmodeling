@@ -1,0 +1,8 @@
+module tri_buff(D, E, Y, PAD);
+output Y: input D, E; inout PAD;
+reg sig;
+
+assign PAD = E ? D : 1'bz;
+assign Y = PAD;
+
+endmodule
